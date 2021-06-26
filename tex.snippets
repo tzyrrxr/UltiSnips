@@ -1,6 +1,6 @@
 # text bold font
 # \textbf{}
-snippet bf "text bold font"
+snippet bb "text bold font"
 \textbf{$1${VISUAL}}$0
 endsnippet
 
@@ -8,6 +8,34 @@ endsnippet
 snippet mt "two doller signs"
 $$1${VISUAL}$$0
 endsnippet
+
+# math sign function type
+snippet mf "math sign function type"
+\[
+	$0${VISUAL}
+\]
+endsnippet
+
+
+# math sign function type 2
+snippet mff "math sign function type"
+% sign "&" to align
+\begin{align*}
+	$1${VISUAL}
+\end{align*}
+$0
+endsnippet
+
+# insert image
+snippet im "insert image"
+\includegraphics[${1:width=\textwidth}]{$2${VISUAL}}$0
+endsnippet
+
+# insert image parameter "scale=1, etc"
+snippet sc "scale"
+scale=${1:0.5}
+endsnippet
+
 
 # text sign
 snippet tt "text"
