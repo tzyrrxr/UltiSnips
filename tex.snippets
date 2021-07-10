@@ -83,3 +83,13 @@ $\#$
 \end{flushright}
 $0
 endsnippet
+
+# latex list change to alph
+snippet ah "list alph"
+\renewcommand{\theenumi}{\alph{enumi}}
+%\/**** ordered lists ****/
+\begin{enumerate}
+	\item $0
+\end{enumerate}
+\renewcommand{\theenumi}{\arabic{enumi}}
+endsnippet
