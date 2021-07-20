@@ -97,8 +97,15 @@ snippet ah "list alph"
 \renewcommand{\theenumi}{\arabic{enumi}}
 endsnippet
 
-snippet aa
-$1
-$1
-$0
+# matrix
+snippet mr "latex matrix"
+\begin{bmatrix}
+	$0
+\end{bmatrix}
+endsnippet
+
+# transpose 
+# argument i -> inword tirgger
+snippet tr "transpose" i
+^T
 endsnippet
