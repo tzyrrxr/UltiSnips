@@ -1,6 +1,6 @@
 # text bold font
 # \textbf{}
-snippet bb "text bold font"
+snippet bb "text bold font" i
 \textbf{$1${VISUAL}}$0
 endsnippet
 
@@ -33,7 +33,7 @@ endsnippet
 
 
 # text sign
-snippet tt "text"
+snippet tt "text" i
 \text{$1${VISUAL}}$0
 endsnippet
 
@@ -56,12 +56,12 @@ snippet nid "noindent"
 endsnippet
 
 # example
-snippet ex "example"
+snippet ex "example" i
 \textbf{Example $0${VISUAL}} \\\\
 endsnippet
 # example
-snippet ee "example"
-Example\\\\
+snippet ee "example" i
+Example $0
 endsnippet
 # solution
 snippet so "solution"
