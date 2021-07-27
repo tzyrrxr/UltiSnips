@@ -4,6 +4,11 @@ snippet bb "text bold font" i
 \textbf{$1${VISUAL}}$0
 endsnippet
 
+# bold Program
+snippet pr "Program bold" i
+\textbf{Program $0:} 
+endsnippet
+
 # math sign
 snippet mm "two doller signs" i
 $$1${VISUAL}$$0
@@ -129,7 +134,7 @@ snippet in "inverse" i
 ^{-1}
 endsnippet
 
-# lower letter
+# lower letter under
 snippet __ "lower letter" i
 _{$0}
 endsnippet
@@ -150,7 +155,8 @@ snippet line "latex rule{width}{height}"
 \rule{10cm}{0.5pt}\\\\
 endsnippet
 
-# bold Program
-snippet pr "Program bold" i
-\textbf{Program $0:} 
+
+# font italics
+snippet ti "font italics" i
+\textit{$0${VISUAL}}
 endsnippet
