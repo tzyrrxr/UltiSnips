@@ -105,10 +105,17 @@ snippet ah "list alph"
 endsnippet
 
 # matrix
-snippet mr "latex matrix"
+snippet mr "latex matrix" 
 \begin{bmatrix}
 	$0
 \end{bmatrix}
+endsnippet
+
+# fatorials matrix
+snippet fmr "latex factorials matrix" 
+\begin{pmatrix}
+	$0
+\end{pmatrix}
 endsnippet
 
 # transpose 
@@ -136,4 +143,14 @@ snippet olist "order list" i
 \begin{enumerate}
 	\item $0
 \end{enumerate}
+endsnippet
+
+# latex line
+snippet line "latex rule{width}{height}"
+\rule{10cm}{0.5pt}\\\\
+endsnippet
+
+# bold Program
+snippet pr "Program bold" i
+\textbf{Program $0:} 
 endsnippet
