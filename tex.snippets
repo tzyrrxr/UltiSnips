@@ -82,7 +82,7 @@ endsnippet
 
 # mod
 snippet mod "modulo" i
-\pmod $0
+\pmod {$1} $0
 endsnippet
 # gcd
 snippet gcd "gcd" i
@@ -92,7 +92,14 @@ endsnippet
 snippet im "insert image"
 \includegraphics[${1:width=\textwidth}]{$2${VISUAL}}$0
 endsnippet
-
+# root
+snippet root "\sqrt" i
+\sqrt[$2]{$1}$0
+endsnippet
+# fraction
+snippet ff "fraction" i
+\frac{$1}{$2}$0
+endsnippet
 
 # text sign
 snippet tt "text" i
