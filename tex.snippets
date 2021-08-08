@@ -100,7 +100,10 @@ endsnippet
 snippet ff "fraction" i
 \frac{$1}{$2}$0
 endsnippet
-
+# math summation
+snippet sum "sumation" i
+\sum_{$1}^{$2}$0
+endsnippet
 # text sign
 snippet tt "text" i
 \text{$1${VISUAL}}$0
@@ -114,7 +117,12 @@ $2${VISUAL}
 $0
 endsnippet
 
-
+# code
+snippet code "show code" i
+\begin{lstlisting}[language=${1:Python}]
+$0
+\end{lstlisting}
+endsnippet
 
 # example
 snippet ex "example" i
@@ -208,7 +216,7 @@ endsnippet
 
 # latex line
 snippet line "latex rule{width}{height}"
-\rule{10cm}{0.5pt}\\\\
+\rule{\textwidth}{0.5pt}\\\\
 endsnippet
 
 
