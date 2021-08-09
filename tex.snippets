@@ -1,7 +1,6 @@
 # indent
 snippet id "indent"
 \indent
-
 endsnippet
 # noindent
 snippet nid "noindent"
@@ -20,6 +19,13 @@ snippet id4 "indent 4" i
 \indent\indent\indent\indent
 
 endsnippet
+
+# MIPS
+snippet mi "MIPS" i
+$\\$$1$ $0
+endsnippet
+
+
 
 # text bold font
 # \textbf{}
@@ -120,6 +126,13 @@ endsnippet
 # code
 snippet code "show code" i
 \begin{lstlisting}[language=${1:Python}]
+$0
+\end{lstlisting}
+endsnippet
+
+# code2
+snippet code2 "show code" i
+\begin{lstlisting}
 $0
 \end{lstlisting}
 endsnippet
