@@ -35,6 +35,11 @@ snippet pdf "add pdf" i
 \includepdf[pages=-]{ref/$1}$0
 endsnippet
 
+# length , parallel sign
+snippet len "length" i
+\parallel $1\parallel $0
+endsnippet
+
 # text bold font
 # \textbf{}
 #snippet bb "text bold font" i
@@ -52,15 +57,38 @@ snippet mm "two doller signs" i
 $$1${VISUAL}$$0
 endsnippet
 # math sign
-snippet mm_ "two doller signs" i
+snippet mm_. "two doller signs" i
 $
-$1${VISUAL}
+${VISUAL}
 $
 $0
 endsnippet
+
+# math hat
+snippet hat "hat" i
+\hat{$1}$0
+endsnippet
+
+# sin
+snippet sin. "sin" i
+\sin{${1:\theta}}$0
+endsnippet
+# cos 
+snippet cos. "cos" i
+\cos{${1:\theta}}$0
+endsnippet
+# tan
+snippet tan. "cos" i
+\tan{${1:\theta}}$0
+endsnippet
+
+# degree sign
+snippet deg "degree sign" i
+^{\circ}$0
+endsnippet
 # math dot time
 snippet dd "dot times" i
-\cdot
+\cdot $0
 endsnippet
 # math transpose
 snippet tran "transpose" i
@@ -221,12 +249,12 @@ snippet in "inverse" i
 endsnippet
 
 # lower letter under
-snippet __ "lower letter" i
-_{$0}
+snippet __. "lower letter" i
+_{$1}$0
 endsnippet
 # upper letter
 snippet == "upper letter" i
-^{$0}
+^{$1}$0
 endsnippet
 
 # latex order list
@@ -256,6 +284,11 @@ endsnippet
 # color blue
 snippet cb "font blue" i
 {\color{blue}$0}
+endsnippet
+
+# perpendicular
+snippet per "perpendicular" i
+^{\perp}$0
 endsnippet
 
 # color red
