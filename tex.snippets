@@ -1,6 +1,7 @@
 # indent
 snippet id "indent"
 \indent
+
 endsnippet
 # noindent
 snippet nid "noindent"
@@ -18,6 +19,12 @@ endsnippet
 snippet id4 "indent 4" i
 \indent\indent\indent\indent
 
+endsnippet
+
+# paragraph
+snippet pp "paragraph" i
+\par
+$0
 endsnippet
 
 # MIPS
@@ -102,12 +109,12 @@ snippet mf "math sign function type"
 endsnippet
 
 # math forall
-snippet fa "forall" i
+snippet fo "forall" i
 \forall $0
 endsnippet
 
 # math condition to
-snippet ct "condition to" i
+snippet rr "condition to" i
 \rightarrow $0
 endsnippet
 
@@ -129,7 +136,7 @@ snippet or "condition to" i
 endsnippet
 
 # math sign function type 2
-snippet mff "math sign function type"
+snippet mff. "math sign function type"
 % sign "&" to align
 \begin{align*}
 	$1${VISUAL}
@@ -318,6 +325,11 @@ endsnippet
 # print dots
 snippet ds "dots" i
 \dots$0
+endsnippet
+
+# above and under sign
+snippet up "above and under" i
+\overset{$1}{$2}$0
 endsnippet
 
 # set list order
