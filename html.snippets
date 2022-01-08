@@ -1,3 +1,15 @@
+# overbrace
+snippet overbrace "overbrace" i
+\overbrace{${VISUAL}}^{$1\text{$2}}$0
+endsnippet
+# underbrace
+snippet underbrace "underbrace" i
+\underbrace{${VISUAL}}_{$1\text{$2}}$0
+endsnippet
+# summation
+snippet sum "summation" i
+\displaystyle\sum_{$1}^{$2}$0
+endsnippet
 # code
 snippet code "code" i
 <pre>
@@ -8,7 +20,7 @@ $0
 endsnippet
 # comment
 snippet cc "comment" i
-<!-- $0${VISUAL} -->
+<!-- $1${VISUAL} -->$0
 endsnippet
 
 # break line
@@ -25,6 +37,11 @@ snippet mm "math" i
 \(
 $0
 \)
+endsnippet
+# inter math new line
+snippet mt "break line" i
+\)<br>
+\($0
 endsnippet
 snippet ms. "math" i
 
@@ -57,11 +74,6 @@ $0
 \end{bmatrix}
 endsnippet
 
-# inter math new line
-snippet mt "break line" i
-\)<br>
-\($0
-endsnippet
 
 # multiple dot
 snippet cd "multiple" i
