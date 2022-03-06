@@ -145,3 +145,65 @@ endsnippet
 snippet tt "multiple times" i
 \times $0
 endsnippet
+
+
+# html default
+snippet html_d "html default"
+<html>
+<head>
+<title></title>
+
+<!-- latex math javascript-->
+<script 
+id="MathJax-script"
+async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js">
+</script>
+<!-- open raw text -->
+<script charset="utf-8">
+function graph(name){
+	var file = "src/" + name;
+	window.open(file);
+}
+</script>
+
+<link rel="stylesheet" type="text/css" href="https://ahsjlin.github.io/html_head/css/a/blue.css">
+<link rel="stylesheet" type="text/css" href="https://ahsjlin.github.io/html_head/css/table/block.css">
+
+
+
+</head>
+<body>
+$0
+
+
+
+
+<hr>
+<footer>
+<h2>Reference</h2>
+
+</footer>
+
+</body>
+</html>
+endsnippet
+
+
+# table question
+snippet question "question" i
+<table>
+<tr><th>Question ${VISUAL}</th></tr>
+<tr>
+<td>
+$1
+</td>
+</tr>
+<tr><th>Answer</th></tr>
+<tr>
+<td>
+$2
+</td>
+</tr>
+</table>
+$0
+endsnippet
