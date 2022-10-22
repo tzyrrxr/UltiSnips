@@ -2,3 +2,23 @@
 snippet pt "Console Print" i
 Print (L"$1\n"$2);$0
 endsnippet
+
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+#@@@@@@@@@@@@@@ UEFI @@@@@@@@@@@@@@
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+snippet err "Error Debug" i
+if(EFI_ERROR (Status) ) {
+  DEBUG ((EFI_D_ERROR | EFI_D_INFO, "======================\n\n"));
+  DEBUG ((EFI_D_ERROR | EFI_D_INFO, "   $1 Error~     \n\n"));
+  DEBUG ((EFI_D_ERROR | EFI_D_INFO, "======================\n\n"));
+  return Status;
+} else {
+  DEBUG ((EFI_D_ERROR | EFI_D_INFO, "======================\n\n"));
+  DEBUG ((EFI_D_ERROR | EFI_D_INFO, "   $1 Success~     \n\n"));
+  DEBUG ((EFI_D_ERROR | EFI_D_INFO, "======================\n\n"));
+}$0
+
+endsnippet
+#============== UEFI ==============
+#==================================
+
