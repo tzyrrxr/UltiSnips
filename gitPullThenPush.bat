@@ -1,6 +1,6 @@
 @echo off
 git pull
-::pause
+pause
 @echo off
 git add *
 git commit -m "%date% %time%"
