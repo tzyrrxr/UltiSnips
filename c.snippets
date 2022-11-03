@@ -19,6 +19,14 @@ if(EFI_ERROR (Status) ) {
 }$0
 
 endsnippet
+
+snippet efi_err "Error Debug" i
+  if (EFI_ERROR(Status)) {
+    //Print (L"Something went wrong with $1\nStatus: %r\n", Status);
+    return Status;
+  }$0
+endsnippet
+
 #============== UEFI ==============
 #==================================
 
