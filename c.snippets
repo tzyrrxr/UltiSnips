@@ -6,6 +6,15 @@ endsnippet
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 #@@@@@@@@@@@@@@ UEFI @@@@@@@@@@@@@@
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+snippet clear "clear" i
+gST->ConOut->ClearScreen(gST->ConOut);$0
+endsnippet
+
+snippet error "EFI_Error" i
+if (EFI_ERROR (Status)) {
+  Print (L"Error log: %r", Status);
+}
+endsnippet
 snippet err "Error Debug" i
 if(EFI_ERROR (Status) ) {
   DEBUG ((EFI_D_ERROR | EFI_D_INFO, "======================\n\n"));
